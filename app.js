@@ -79,14 +79,5 @@ con.query('SELECT * FROM game', (err, rows) => {
 
 })
 
-  const game = {idmylist: 1, games: 'Portal' };
-
-  con.query('INSERT INTO mylist SET ?', game, (err, res) => {
-    if(err) throw err;
-
-    console.log('Last insert ID:', res.insertID);
-  });
-
-
 con.end((err) => {});
 export default app;
