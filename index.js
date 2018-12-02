@@ -1,6 +1,8 @@
 //index.js
 import http from 'http';
 import express from 'express';
+import React, {Component} from 'react';
+import ReactDOM from "react-dom";
 
 //Express app setup
 const app = express();
@@ -11,6 +13,4 @@ server.on('listening', () => {
 	console.log('Server is listening on port: 3000');
 })
 
-app.get('*', (req, res) => {
-	res.end('Hello Express');
-})
+app.use(express.static(__dirname + '/public'));
