@@ -4,21 +4,22 @@ html
     link(rel="stylesheet", href="https://bootswatch.com/4/lux/bootstrap.css")
     script(src='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js')
     script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-    script(type='text/javascript', src='please.js')
+    script(type='text/javascript', src='GameList.js')
   body
+    script(type='text/javascript', src='GameList.js')
     nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
         a.navbar-brand(href='/home') Lygma
         button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarColor01', aria-controls='navbarColor01', aria-expanded='false', aria-label='Toggle navigation')
             span.navbar-toggler-icon
-        #navbarColor01.collapse.navbar-collapse
+        navbarColor01.collapse.navbar-collapse
             ul.navbar-nav.mr-auto
                 li.nav-item
                     a.nav-link(href='/home') Home 
                     span.sr-only (current)
                 li.nav-item
                     a.nav-link(href='/list') Games List
-                //li.nav-item
-                    //a.nav-link(href='/YourList') Your List
+                li.nav-item
+                    a.nav-link(href='/YourList') Your List
                 //- li.nav-item
                     //- a.nav-link(href='/login') Login            
             //form.form-inline.my-2.my-lg-0
